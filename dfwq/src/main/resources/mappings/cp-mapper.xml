@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hfhj.mapper.CpMapper">
+	<!--mybatis ehcache缓存配置 -->
+	<!-- 以下两个<cache>标签二选一,第一个可以输出日志,第二个不输出日志 <cache type="org.mybatis.caches.ehcache.LoggingEhcache" 
+		/> -->
+	<!-- <cache type="org.mybatis.caches.ehcache.EhcacheCache"/> -->
+	<!-- 以下与实体类的中字段一致 -->  
+	<sql id="selectId">
+		id,
+        cp_bm,
+        cp_mc,
+        cp_sslb,
+        cp_wxsx,
+        cp_flmc,
+        cp_dj,
+        cp_sj,
+        cp_jj,
+        cp_jz,
+        cp_ys,
+        cp_bz		
+	</sql>
+	
+	<select id="findCpPage" resultType="com.hfhj.entity.CpFormMap">
+		select
+		<include refid="selectId" />
+		from gk
+		where 1 = 1
+		<if test="cp_mc != null and cp_mc != ''">
+		and gk_XM like '%${cp_mc}%'
+		</if>
+		<if test="column != null">
+          order by ${column} ${sort}
+        </if>
+	</select>
+	
+	<select id="findCpByNames" resultType="com.hfhj.entity.CpFormMap">  
+    select 
+    <include refid="selectId" />  
+    from cp where cp_sslb in  
+    <foreach item="item" index="index" collection="list" open="(" separator="," close=")">  
+     #{item}  
+    </foreach> 
+    limit 10 
+</select>  
+
+</mapper>

@@ -1,0 +1,72 @@
+<component name="libraryTable">
+  <library name="org.springframework.jdbc-3.0.4.RELEASE">
+    <ANNOTATIONS>
+      <root url="file://$PROJECT_DIR$/../.." />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../org.springframework.asm-3.0.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../org.springframework.beans-3.0.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../org.springframework.core-3.0.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../org.springframework.context-3.0.0.RC3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../org.springframework.expression-3.0.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../org.springframework.web-3.0.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../org.springframework.web.servlet-3.0.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../spring-web-4.3.6.RELEASE.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.." />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/docs/javadoc-api" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../BookStore/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../BookStore/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../Spring-master/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../Spring-master/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../jqcx/dt2/JQiCar/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../jqcx/dt2/dt2-common/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../jqcx/dt2/dt2-provider/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.aop/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.aop/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.aspects/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.aspects/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.beans/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.beans/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.context.support/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.context.support/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.context/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.context/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.core/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.core/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.expression/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.expression/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.instrument.tomcat/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.instrument/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.integration-tests/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.jdbc/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.jdbc/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.jms/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.jms/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.orm/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.orm/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.oxm/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.oxm/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.samples.petclinic/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.samples.petclinic/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.test/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.test/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.transaction/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.transaction/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.web.portlet/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.web.portlet/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.web.servlet/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.web.servlet/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.web.struts/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.web.struts/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.web/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../spring-framework-3.0.0.RC3/projects/org.springframework.web/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../tzet/src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../.." recursive="false" />
+  </library>
+</component>

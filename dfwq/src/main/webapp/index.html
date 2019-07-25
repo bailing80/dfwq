@@ -1,0 +1,906 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> 
+  <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> 
+  <![endif]-->
+  <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <title>东方微趣</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="author" content="templatemo">
+    <meta charset="UTF-8">
+
+    <!-- CSS Bootstrap & Custom -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">  
+    <link href="slider/flexslider.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+
+    <!-- Modernizr -->
+    <script src="slider/modernizr.js"></script>
+    <!-- HTML 5 shim for IE backwards compatibility -->
+  <!-- [if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+  </script>
+  <![endif]-->
+  
+  <STYLE type=text/css>
+   .style1 {
+           FONT-SIZE: 12pt; COLOR: #ff0000
+           }
+   .style2 {
+          FONT-SIZE: 10pt; COLOR: #0000ff
+           }
+  </STYLE>
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">    
+    <div class="container">
+      <div class="row">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="col-md-2 col-sm-2 col-xs-12">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">切换导航</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand"><img src="images/templatemo_logo.png" alt="karma"></a>
+          </div>
+        </div>        
+        
+        <div class="col-md-10 col-sm-10 col-xs-12">
+          <div class="navbar-collapse collapse menu">          
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#home"><i class="fa fa-home"></i>首页</a></li>
+              <li><a href="#about"><i class="fa fa-user"></i>关于我们</a></li>
+              <li><a href="#services"><i class="fa fa-cogs"></i>服务</a></li>
+              <li><a href="#portfolio"><i class="fa fa-briefcase"></i>珠宝展示</a></li>
+              <li><a href="#blog"><i class="fa fa-pencil"></i>特色</a></li>
+              <li><a href="#contact"><i class="fa fa-envelope"></i>联系我们</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.row -->
+    </div>
+  </nav>
+
+  <div class="container" id="home">
+    <div class="row">
+      <div class="col col-md-12">        
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="images/imagestemplatemo_slide_1.jpg" alt="slide 1" />
+              <p class="flex-caption">1</p>
+            </li>
+            <li>
+              <img src="images/imagestemplatemo_slide_2.jpg" alt="slide 2" />
+              <p class="flex-caption">2</p>
+            </li>
+            <li>
+              <img src="images/imagestemplatemo_slide_3.jpg" alt="slide 3" />
+              <p class="flex-caption">3</p>
+            </li>
+          </ul>
+        </div>            
+      </div>
+    </div>
+  </div>
+  
+
+  <section id="contact">
+    <div class="outer_container">
+      <div class="container">
+        <div class="row">
+          
+		      <div class="col col-md-5 col-sm-12 center-row" id="contact_content">
+                <div class="row center">
+                  <div class="col col-md-4 col-sm-12 templatemo_ceo">
+                    <img src="images/templatemo_image_02.jpg" alt="Linda" class="center-block img-circle img-responsive">
+                    <p>Linda, 美女一枚</p>
+                  </div>             
+                </div>
+              </div>
+		 
+          <div class="col col-md-7 col-sm-12 col-xs-12 center-row" id="contact_content">
+            <form role="form" action="#" method="post" class="" id="birthinfo"  name=cal>
+              <div class="row">               
+				<div class="col-md-2">
+                  <div class="form-group">
+                    姓名:
+                  </div>
+                </div>
+				
+				<div class="col-md-3">
+                  <div class="form-group">
+                    <input name="fullname" type="text" class="form-control" id="input_name" placeholder="姓名...">
+                  </div>
+                </div>                
+              </div>
+			  <div class="row">
+			    <div class="col-md-2">
+                  <div class="form-group">
+                    性别:
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="form-control" for="ssex"> 
+					  <input name="ssex" type="radio"  id="input_asex" value="男" checked="checked">男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					  <input name="ssex" type="radio"  id="input_bsex" value="女">女
+					</div>
+                  </div>
+                </div> 
+              </div>
+			  <div class="row">
+			    <div class="col-md-2">
+                  <div class="form-group">
+                    出生日期:<br/>(公历)
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <select class="form-control" id="select_y" name=y>                      
+					</select>
+				  </div>
+                </div>  
+				<div class="col-md-1">
+                  <div class="form-group">
+                    年
+                  </div>
+                </div>
+				<div class="col-md-2">
+                  <div class="form-group">
+                    <select class="form-control" id="select_m" name=y> 
+                        <option value="1" selected>1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>				
+					</select>
+				  </div>
+                </div>
+				<div class="col-md-1">
+                  <div class="form-group">
+                    月
+                  </div>
+                </div>
+				<div class="col-md-2">
+                  <div class="form-group">
+                    <select class="form-control" id="select_r" name=d>                      
+					</select>
+				  </div>
+                </div>
+				<div class="col-md-1">
+                  <div class="form-group">
+                    日
+                  </div>
+                </div>								
+              </div>
+			  <div class="row">
+			    <div class="col-md-2">
+                  <div class="form-group">
+                    时间:
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <select class="form-control" id="select_sh" name=h>  
+                    <option value="1" selected>1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>	
+					</select>
+				  </div>
+                </div> 
+				<div class="col-md-1">
+                  <div class="form-group">
+                    点
+                  </div>
+                </div> 				
+              </div>
+			  <div class="row">               
+				<div class="col-md-2">
+                  <div class="form-group">
+                    手机号码:
+                  </div>
+                </div>
+				
+				<div class="col-md-3">
+                  <div class="form-group">
+                    <input name="pnonenum" type="text" class="form-control" id="phone_num" placeholder="手机号码...">
+                  </div>
+                </div>                
+              </div>
+			  <div class="row">
+			      <div class="col-md-6">
+				      <div class="form-group">
+				          <a class="btn btn-primary form-control" id="" onclick=inq(cal)>测&nbsp;&nbsp;&nbsp;&nbsp算</a>
+					  </div>
+				  </div>
+				  <div class="col-md-6">  
+					  <div class="form-group">
+                         <a type="reset" class="btn btn-primary form-control" id="qx">取&nbsp;&nbsp;&nbsp;&nbsp消</a>
+					  </div>
+                </div>
+			  </div>
+            </form>          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="blog">
+    <div class="outer_container">
+      <div class="container">
+        <div class="row"><!--开始-->
+			<div class="col col-md-5 col-md-push-7 col-sm-12"><h1>测算结果</h1></div>
+			<div class="col col-md-7 col-md-pull-5 col-sm-12">
+			<FORM role="form" name="" >
+			<div class="row">               
+				<div class="col-md-2">
+                  <div class="form-group">
+                    金:
+                  </div>
+                </div>				
+				<div class="col-md-5">
+                  <div class="form-group">
+                      <INPUT id="jin" name=  class="form-control" readonly = "readonly">
+                  </div>
+                </div>                
+            </div>
+			
+			<div class="row">               
+				<div class="col-md-2">
+                  <div class="form-group">
+                   木:
+                  </div>
+                </div>				
+				<div class="col-md-5">
+                  <div class="form-group">
+                      <INPUT id="mu" name=  class="form-control" readonly = "readonly">
+                  </div>
+                </div>                
+            </div>
+			
+			<div class="row">               
+				<div class="col-md-2">
+                  <div class="form-group">
+                  水:
+                  </div>
+                </div>				
+				<div class="col-md-5">
+                  <div class="form-group">
+                      <INPUT id="shui" name=  class="form-control" readonly = "readonly">
+                  </div>
+                </div>                
+            </div>
+			
+			<div class="row">               
+				<div class="col-md-2">
+                  <div class="form-group">
+                    火
+                  </div>
+                </div>				
+				<div class="col-md-5">
+                  <div class="form-group">
+                      <INPUT id="huo" name=  class="form-control" readonly = "readonly">
+                  </div>
+                </div>                
+            </div>
+            
+			<div class="row">               
+				<div class="col-md-2">
+                  <div class="form-group">
+                    土:
+                  </div>
+                </div>				
+				<div class="col-md-5">
+                  <div class="form-group">
+                      <INPUT id="tu" name=  class="form-control" readonly = "readonly">
+                  </div>
+                </div>                
+            </div>
+            
+            <div class="row">               
+				<div class="col-md-2">
+                  <div class="form-group">
+                    用户信息:
+                  </div>
+                </div>				
+				<div class="col-md-5">
+                  <div class="form-group">
+                      <INPUT id="userinfo1" name=  class="form-control" value=${userinfo} readonly = "readonly">
+                  </div>
+                </div>                
+            </div>
+            
+			<div class="row">
+			      <div class="col-md-6">
+				      <div class="form-group">
+				          <INPUT onclick="" type=button value=查询 name=button class="btn btn-primary form-control">
+					  </div>
+				  </div>
+				  <div class="col-md-6">  
+					  <div class="form-group">
+                         <INPUT type=reset value=清除 name=reset class="btn btn-primary form-control">
+					  </div>
+                </div>
+			 </div>
+			</FORM>
+		</div>
+		</div>
+		</div><!--结束-->
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <footer>
+    <div class="container">        
+      <div class="row">
+        <div class="col col-md-6 col-sm-6 col-xs-6 col-xxs">
+          <img src="images/templatemo_logo.png" alt="karma">
+          <div id="templatemo_copyright">
+            版权所有 © 2015 <a href="#">和发黄金</a> 
+          </div>
+        </div>        
+        <div class="col col-md-6 col-sm-6 col-xs-6 col-xxs">
+          <div class="pull-right">
+            <div class="social_buttons">
+              <a href="#" rel="nofollow" class="icon-button facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" rel="nofollow" class="icon-button twitter"><i class="fa fa-twitter"></i></a>             
+              <a href="#" rel="nofollow" class="icon-button youtube"><i class="fa fa-youtube"></i></a>
+            </div>
+            <a href="#" id="go-top"><div class="back_to_top">返回顶部</div></a>
+          </div>            
+        </div>
+      </div> 
+    </div>
+  </footer>
+
+  <!-- JavaScripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/jquery.singlePageNav.js"></script>
+  <script src="js/templatemo_custom.js"></script>
+  <script defer src="slider/jquery.flexslider.js"></script>
+  
+  <script type="text/javascript">
+
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+          $('.menu').singlePageNav();
+        }
+      });
+    });
+
+    $('#go-top').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, 1000);
+      return false;
+    });
+	
+	$('#xsh').click(function(){
+	    var firstname = $('#input_name').val();
+		var item = $('input[name=ssex][checked]').val();
+		alert('okok' + firstname + '性别'+ item);   
+	})
+	
+	$('#qx').click(function(){
+	    $('#birthinfo')[0].reset();  
+	})
+	
+	//var a = request.getAttribute("username");
+	//var id = '<%=Session["userinfo"] %>';
+	console.log("输出用户名:" + id);
+	
+	$.get('http://localhost:8080/dfwq/wx.shtml', function(data){
+	    alert(data); // data即为newFilePath
+	});
+	
+	/*
+	$.ajax({
+         type: "get",
+         url: "http://localhost:8080/dfwq/wx.shtml",//请求的后台地址
+         //data: {},//前台传给后台的参数
+         async : false,
+         success: function(msg){//msg:返回值
+           alert( "Data Saved: " + msg );
+          }
+      });*/
+      
+      /*
+       function Getdata(productId, sku) {//得到请求数据方法
+            //alert(sku);
+            var str = "";
+            $.ajax({
+                type: "GET",
+                url: "../Ajax/GetSkus.aspx?productId=" + productId + "&sku=" + sku,
+                contentType: "application/text; charset=utf-8",
+                dataType: "text",
+                success: function (returnMsg) {
+                    returnMsg = returnMsg.split('|');
+                    //alert(returnMsg.length);
+                    str += returnMsg[0] + "|" + returnMsg[1];//这里是有结果的
+                    //alert(str);
+                },
+                error: function (err) {
+                    alert("ajax错误码:" + err.status);
+                }
+            });
+            alert(str);//为什么这里返回的是空
+            return str;
+        }
+      
+      function CreateTable3(arr, label) {
+      var str=Getdata(productId, sku);
+      alert(str);//我想在这里调用ajax返回的结果，为什么是空的呢？
+      }
+
+      */
+	
+	var mydate = new Date();
+	var curryear = mydate.getFullYear();
+	for(var i=1901; i<=2050; i++)
+	   {
+	   if(i==curryear)
+	     $("#select_y").append("<option value=" + "'" + i + "' selected='true'>" + i + "</option>");
+	   else
+	     $("#select_y").append("<option value=" + "'" + i + "'>" + i + "</option>");
+	   }
+	   
+	 for(var i=1; i<=31; i++)
+	   {
+	     $("#select_r").append("<option value=" + "'" + i + "'>" + i + "</option>");
+	 }
+
+  
+//<!--
+tg=new Array("甲","乙","丙","丁","戊","己","庚","辛","壬","癸");
+dz=new Array("子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥");
+sx=new Array("鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪");
+w=new Array("木","火","土","金","水");
+f=new Array("东","南","中","西","北");
+sz=new Array("一","二","三","四","五","六","七","八","九","十",
+			"十一","十二","十三","十四","十五","十六","十七","十八","十九","二十",
+			"廿一","廿二","廿三","廿四","廿五","廿六","廿七","廿八","廿九","三十");
+m0=new Array(
+0,1,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,1,0,1,0,1,1,1,
+0,1,0,1,2,1,0,0,1,1,0,1,1,1,0,1,0,0,1,0,0,1,1,0,
+1,1,0,1,1,0,0,1,0,1,0,1,0,1,1,3,0,1,0,1,0,1,0,1,
+0,1,0,1,0,1,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,1,0,1,
+0,4,0,1,0,1,0,1,1,1,0,1,0,1,0,0,1,0,1,0,1,1,1,0,3632)
+m1=new Array(
+1,0,1,0,0,4,0,1,1,0,1,1,1,0,1,0,0,1,0,0,1,1,0,1,
+1,1,0,1,0,0,1,0,0,1,0,1,1,1,0,1,3,0,1,0,0,1,0,1,
+1,0,1,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,1,0,1,0,1,0,
+1,2,1,0,1,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,1,
+0,1,0,0,1,0,3,1,0,1,1,1,0,1,0,0,1,0,0,1,0,1,1,1,7294)
+m2=new Array(
+1,0,1,0,0,1,0,0,1,0,1,1,1,0,1,1,2,1,0,0,1,0,1,1,
+0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,1,0,1,0,1,0,0,
+1,0,1,3,1,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,1,0,
+1,0,0,1,0,1,0,1,0,1,1,1,0,4,0,1,0,0,1,0,1,1,1,1,
+0,1,0,0,1,0,0,1,0,1,1,1,0,1,1,0,0,4,0,1,0,1,1,0,10955);
+m3=new Array(
+1,1,0,1,0,1,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,1,0,1,
+0,1,1,0,5,0,1,0,1,0,0,1,0,1,0,1,1,0,1,0,1,1,0,1,
+0,0,1,0,1,0,1,1,0,1,1,0,1,0,3,0,0,1,1,0,1,1,1,0,
+1,0,0,1,0,0,1,0,1,1,1,0,1,1,0,0,1,0,3,0,1,1,0,1,
+1,1,0,0,1,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,1,0,1,0,14587);
+m4=new Array(
+1,1,0,1,1,3,0,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,
+0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,3,0,1,0,1,1,0,1,1,
+0,0,1,0,0,1,0,1,1,1,0,1,1,0,0,1,0,0,1,0,1,1,0,1,
+1,4,0,1,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,1,0,1,0,1,
+1,0,1,1,0,1,2,1,0,1,0,1,0,1,1,0,1,1,0,0,1,0,1,0,18249);
+m5=new Array(
+1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,3,0,1,1,0,1,0,1,
+0,1,0,0,1,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,1,
+0,1,3,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,1,0,1,0,1,1,
+1,0,1,0,1,0,0,4,1,0,1,0,1,1,1,0,1,0,0,1,0,1,0,1,
+0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,4,1,0,1,0,1,0,21911);
+m6=new Array(
+1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,1,0,
+1,0,1,2,1,0,1,0,1,1,1,0,1,0,1,0,0,1,0,1,0,1,1,1,
+0,1,0,1,0,0,1,0,0,1,1,0,1,1,4,1,0,0,1,0,0,1,1,0,
+1,1,0,1,1,0,0,1,0,1,0,1,0,1,0,1,1,0,4,1,0,1,0,1,
+0,1,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,1,0,1,25544);
+m7=new Array(
+0,1,0,0,4,1,0,1,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,
+1,0,1,0,0,1,0,0,1,1,0,1,1,1,0,4,0,1,0,0,1,1,0,1,
+1,1,0,1,0,0,1,0,0,1,0,1,1,1,0,1,0,1,0,4,0,1,0,1,
+1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,1,0,1,0,1,0,
+1,0,0,1,0,5,0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,1,29206);
+m8=new Array(
+0,1,0,0,1,0,0,1,1,0,1,1,1,0,1,2,1,0,0,1,0,1,1,1,
+1,0,1,0,0,1,0,0,1,0,1,1,1,0,1,1,0,0,1,0,0,4,1,1,
+0,1,1,0,1,0,1,0,0,1,0,1,0,1,1,0,1,1,0,1,0,1,0,0,
+1,0,1,0,1,4,1,1,0,1,0,0,1,0,1,0,1,0,1,1,0,1,1,0,
+1,0,0,1,0,1,0,1,0,1,1,1,0,1,0,0,4,0,1,0,1,1,1,1,32868);
+m9=new Array(
+0,1,0,0,1,0,0,1,0,1,1,1,0,1,1,0,0,1,0,0,1,0,1,1,
+0,1,4,1,0,1,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,1,0,1,
+0,1,1,0,1,0,1,4,0,1,0,1,0,1,0,1,1,0,1,0,1,1,0,0,
+1,0,1,0,1,0,1,1,0,1,1,0,1,0,0,1,2,1,1,0,1,1,0,1,
+1,0,0,1,0,0,1,0,1,1,1,0,1,1,0,0,1,0,0,1,0,1,1,0,36499);
+m10=new Array(
+1,1,0,4,1,0,0,1,0,1,0,1,1,1,0,1,0,1,0,0,1,0,1,0,
+1,1,0,1,1,0,1,0,0,1,0,1,0,4,1,1,0,1,0,1,0,1,0,1,
+0,1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,4,1,1,0,1,1,
+0,0,1,0,0,1,0,1,1,1,0,1,1,0,0,1,0,0,1,0,1,1,0,1,
+1,1,0,0,4,0,1,0,1,0,1,1,1,0,1,0,1,0,0,1,0,1,0,1,40161);
+m11=new Array(
+1,0,1,1,0,1,0,0,1,0,1,0,1,0,1,4,1,0,1,0,1,0,1,0,
+1,0,1,0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,4,1,0,1,
+0,1,0,0,1,0,1,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,1,
+0,1,0,1,0,3,0,1,0,1,1,1,0,1,0,1,0,0,1,0,1,0,1,1,
+1,0,1,0,1,0,0,1,0,0,1,1,0,1,1,4,1,0,0,1,0,1,0,1,43823);
+m12=new Array(
+0,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,
+0,4,0,1,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,1,0,
+1,0,1,0,0,4,1,0,1,1,1,0,1,0,1,0,0,1,0,0,1,1,1,0,
+1,1,0,1,0,0,1,0,0,1,1,0,1,1,1,0,4,0,1,0,0,1,1,0,
+1,1,0,1,0,1,0,1,0,0,1,1,0,1,0,1,1,0,1,0,1,0,1,0,47455)
+m13=new Array(
+0,1,4,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1,0,1,1,0,1,
+0,1,0,0,1,0,1,0,1,1,4,1,0,1,0,0,1,0,1,0,1,1,0,1,
+1,0,1,0,0,1,0,0,1,1,0,1,1,1,0,1,0,3,0,0,1,0,1,1,
+1,1,0,1,0,0,1,0,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,0,
+1,1,0,1,4,1,0,1,0,1,0,0,1,0,1,1,0,1,0,1,1,0,1,0,51117)
+m14=new Array(
+0,1,0,1,0,1,1,0,1,1,0,1,0,4,0,1,0,1,0,1,1,0,1,1,
+0,1,0,0,1,0,0,1,1,0,1,1,1,0,1,0,0,1,2,1,0,1,1,1,
+1,0,1,0,0,1,0,0,1,0,1,1,1,0,1,0,1,0,1,0,0,1,0,1,
+1,0,1,1,3,0,1,0,0,1,0,1,0,1,1,0,1,1,0,1,0,0,1,0,
+1,0,1,0,1,1,0,1,1,0,1,0,0,1,3,0,1,0,1,1,0,1,1,0,54779)
+ms=new Array(m0,m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14);
+ly=new Array(29,30,58,59,59,60);
+tw=new Array(0,0,1,1,2,2,3,3,4,4);
+dw=new Array(4,2,0,0,2,1,1,2,3,3,2,4);
+
+function inq(form){
+re="请重新输入！";
+//y=form.y.value;
+y = $('#select_y option:selected').val();
+console.log("y的值is：" + y);
+if(y==""||y<1901||y>2050)
+  alert("年应在1901和2050之间。"+re);
+else{
+  gl0=(Date.UTC(y,0,1)-Date.UTC(1901,1,19))/86400000;
+  dy=y-1901;
+  i=Math.floor(dy/10);
+  console.log("i的值为：" + i);
+  nl0=(i==0)?0:ms[i-1][120];
+  n=i*120;for(j=0;j<120;j++){
+    n++;if(n>dy*12)break;
+	nl0+=ly[ms[i][j]];
+	}
+cjr=(nl0-gl0)%31+1;
+cjy=(nl0-gl0>30)?2:1;
+jq=tg[(dy+6)%10]+dz[dy%12];
+jh=tg[(dy+7)%10]+dz[(dy+1)%12];
+s1="<title>查询结果</title><body bgcolor=#FFFFFF text=#ff0000><center>"+"<table width=400><tr><td><font size=4>您查询的结果如下:<p>公历："+y+"年";
+s2="<br>春节："+cjy+"月"+cjr+"日<br>节前："+jq+"年<br>节后："+jh+"年<br>";
+s3="要查询生辰八字，请输入时。";
+s4="</font></td></tr></table></center></body>";
+m=$('#select_m option:selected').val();
+d=$('#select_r option:selected').val();
+h=$('#select_sh option:selected').val();
+if(m==""||d==""){
+  document.write(s1,s2,"<br>","进一步查询，请输入月和日。<br>",s3,s4);
+  document.close();}
+else if(m>12||m<1)
+  alert("月应在1与12之间。"+re);
+else if(d>31||d<1)
+  alert("日应在1与31之间。"+re);
+else if((m==4||m==6||m==9||m==11)&&d>30)
+  alert(m+"月只有30天。"+re);
+else if(y%4!=0&&m==2&&d>28)
+  alert(y+"年是平年，2月只有28天。"+re);
+else if(m==2&&d>29)
+  alert(y+"年是闰年，2月只有29天。"+re);
+else if(h>23||h<0)
+  alert("时应在0与23之间。"+re);
+else{
+  if($('#select_sh option:selected').val()=="")
+    h=0;
+  sum=(Date.UTC(y,m-1,d,h)-Date.UTC(1901,1,18,23))/1000;
+  sumd=Math.floor(sum/86400);
+  day=(Math.floor((sum-1800)/86400)+51)%7;
+  xq=(day==0)?"日":sz[day-1];
+  tgr=(sumd+54)%10;
+  dzr=(sumd+52)%12;
+  gzr=tg[tgr]+dz[dzr];
+  dzs=Math.floor((h*1+1)/2)%12;
+  tgs=((tgr%5)*2+dzs)%10;
+  gzs=tg[tgs]+dz[dzs];
+  for(i=0;ms[i][120]<=sumd;i++);
+  k=(i==0)?0:ms[i-1][120];
+  p=i*120;
+  for(j=0;j<120;j++){
+    k+=ly[ms[i][j]];
+	p++;
+	if(k>sumd)break;}
+ if(sumd+30<0){
+   ri=59+sumd;
+   p=-1;}
+ else if(sumd<0){
+   ri=30+sumd;p=0;}
+ else
+  ri=sumd+ly[ms[i][j]]-k;
+  yue=((p+11)%12==0)?"正":sz[(p+11)%12];
+  mij=ms[i][j];
+  if((mij==2||mij==3)&&ri>28){
+    ri-=29;yue="闰"+yue;}
+  else if((mij==4||mij==5)&&ri>29){
+    ri-=30;yue="闰"+yue;}
+  ri=((ri<10)?"初":"")+sz[ri];
+  tgn=Math.floor((p-1)/12+7)%10;
+  dzn=Math.floor((p-1)/12+1)%12;
+  gzn=tg[tgn]+dz[dzn];
+  tgy=(p+5)%10;
+  dzy=(p+1)%12;
+  gzy=tg[tgy]+dz[dzy];
+  tn=tw[tgn];
+  dn=dw[dzn];
+  ty=tw[tgy];
+  dy=dw[dzy];
+  tr=tw[tgr];
+  dr=dw[dzr];
+  ts=tw[tgs];
+  ds=dw[dzs];
+  s5=m+"月"+d+"日（星期"+xq+"）";
+  s6="<br>农历："+gzn+"年"+yue+"月"+ri+"日";
+  s7="生肖："+sx[dzn]+"<p>"
+
+var whjin=0;
+var whmu=0;
+var whshui=0;
+var whhuo=0;
+var whtu=0;
+switch (w[tn]) {
+	case "金":
+    	whjin += 1;
+    	break;
+	case "木":
+    	whmu += 1;
+    	break;
+	case "水":
+    	whshui += 1;
+    	break;
+	case "火":
+    	whhuo += 1;
+    	break;
+	case "土":
+    	whtu += 1;
+    	break;
+	default:    
+}
+switch (w[dn]) {
+case "金":
+	whjin += 1;
+	break;
+case "木":
+	whmu += 1;
+	break;
+case "水":
+	whshui += 1;
+	break;
+case "火":
+	whhuo += 1;
+	break;
+case "土":
+	whtu += 1;
+	break;
+default:    
+}
+switch (w[ty]) {
+case "金":
+	whjin += 1;
+	break;
+case "木":
+	whmu += 1;
+	break;
+case "水":
+	whshui += 1;
+	break;
+case "火":
+	whhuo += 1;
+	break;
+case "土":
+	whtu += 1;
+	break;
+default:    
+}
+switch (w[dy]) {
+	case "金":
+		whjin += 1;
+		break;
+	case "木":
+		whmu += 1;
+		break;
+	case "水":
+		whshui += 1;
+		break;
+	case "火":
+		whhuo += 1;
+		break;
+	case "土":
+		whtu += 1;
+		break;
+	default:    
+}
+switch (w[tr]) {
+	case "金":
+		whjin += 1;
+		break;
+	case "木":
+		whmu += 1;
+		break;
+	case "水":
+		whshui += 1;
+		break;
+	case "火":
+		whhuo += 1;
+		break;
+	case "土":
+		whtu += 1;
+		break;
+	default:    
+}
+switch (w[dr]) {
+	case "金":
+		whjin += 1;
+		break;
+	case "木":
+		whmu += 1;
+		break;
+	case "水":
+		whshui += 1;
+		break;
+	case "火":
+		whhuo += 1;
+		break;
+	case "土":
+		whtu += 1;
+		break;
+	default:    
+}
+switch (w[ts]) {
+	case "金":
+		whjin += 1;
+		break;
+	case "木":
+		whmu += 1;
+		break;
+	case "水":
+		whshui += 1;
+		break;
+	case "火":
+		whhuo += 1;
+		break;
+	case "土":
+		whtu += 1;
+		break;
+	default:    
+}
+switch (w[ds]) {
+	case "金":
+		whjin += 1;
+		break;
+	case "木":
+		whmu += 1;
+		break;
+	case "水":
+		whshui += 1;
+		break;
+	case "火":
+		whhuo += 1;
+		break;
+	case "土":
+		whtu += 1;
+	break;
+	default:    
+}
+$("#jin").val(whjin);
+$("#mu").val(whmu);
+$("#shui").val(whshui);
+$("#huo").val(whhuo);
+$("#tu").val(whtu);
+
+//var whtongji = whjin+"金; " + whmu + "木; " + whshui + "水; " + whhuo + "火; " + whtu +  "土";
+//if($('#select_sh option:selected').val()=="")
+	  //document.write(s1,s5,s6,s2,"干支：",gzn,"年",gzy,"月",gzr,"日<br>",s7,s3,s4);
+//else
+	  //document.write(s1,s5,h,"点",s6,dz[dzs],"时",s2,
+	  //"八字：",gzn,"　",gzy,"　",gzr,"　",gzs,"<br>",
+	  //"五行：",w[tn],w[dn],"　",w[ty],w[dy],"　",w[tr],w[dr],"　",w[ts],w[ds],"<br>",
+	  //"方位：",f[tn],f[dn],"　",f[ty],f[dy],"　",f[tr],f[dr],"　",f[ts],f[ds],"<br>",s7,s4,"<br>",whtongji);  
+	  //document.close();
+	/*var customer = {
+			"id":"1",
+			"gkwx_WXMCh" : "v1234",    
+			"gkwx_OpenId" : "ASD123456ff",    
+			"gk_XM" : "张三",    
+			"gk_XB" : "男",
+			"gk_SJHM" : "13066668888",
+			"gk_glcs" : "1995-09-08 12:35:00"		
+	};*/
+	console.log("ajax begin!");  
+    var aj = $.ajax( {    
+	url:'http://localhost:8080/dfwq/gk/addcustomer.shtml',// 跳转到 action    
+	data:JSON.stringify({		
+		"gkwx_WXMCh" : "v1234",    
+		"gkwx_OpenId" : "ASD123456ff",    
+		"gk_XM" : "张三",    
+		"gk_XB" : "男",
+		"gk_SJHM" : "13066668888",
+		"gk_glcs" : "1995-09-08 12:35:00"		
+         }),    
+	type:'post',    
+	cache:false, 
+	contentType: "application/json",
+	dataType:'json',	
+	success:function(data) {    
+    	if(data.msg == "success" ){    
+        	// view("修改成功！");    
+        	alert("添加成功！");    
+        	//window.location.reload();    
+    	}else{    
+    		alert("添加失败！"+ data);    
+    	}    
+ 	},    
+ 	error : function() {    
+      	// view("异常！");    
+      	alert("异常！");    
+ 	}    
+});
+	  console.log("ajax over!");
+	  }}}
+	  
+	 //  //function setfocus(){document.cal.y.focus();return;}
+	//  //-->
+</SCRIPT>
+</body>
+</html>
